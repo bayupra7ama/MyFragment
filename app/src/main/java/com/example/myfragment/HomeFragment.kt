@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.commit
 
 //Berpindah Fragment
 class HomeFragment : Fragment(), View.OnClickListener {
@@ -30,11 +31,10 @@ class HomeFragment : Fragment(), View.OnClickListener {
          val categoriFragment = CategoriFragment()
          val fragmentManager = parentFragmentManager
          fragmentManager.beginTransaction().apply {
-             replace(R.id.frame_container,categoriFragment,CategoriFragment::class.java.simpleName)
-             //untuk menambah kna stack fragment
-             addToBackStack(null)
-             //untuk eksekusi begintransaction
-             commit()
+//             replace fragment dengan fragment ktx
+             fragmentManager.commit {
+                 replace(R.id.frame_container ,categoriFragment,CategoriFragment::class.java.simpleName)
+             }
          }
      }
     }
