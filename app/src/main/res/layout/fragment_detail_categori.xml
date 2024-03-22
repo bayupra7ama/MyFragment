@@ -31,4 +31,10 @@
         android:layout_width="match_parent"
         android:text="@string/show_dialog"
         android:layout_height="wrap_content"/>
+
+  <Button
+        android:id="@+id/btn_to_activity"
+        android:layout_width="match_parent"
+        android:text="@string/pindah_ke_activity"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

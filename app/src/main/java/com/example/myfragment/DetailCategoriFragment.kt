@@ -22,7 +22,7 @@ class DetailCategoriFragment : Fragment() {
 
     companion object{
         val EXTRA_NAME = "extra_name"
-        val EXTRA_DESCRIPTION = "extra_description"
+
     }
 
 
@@ -67,6 +67,8 @@ class DetailCategoriFragment : Fragment() {
             optionDialogFragment.show(fragmentManager, OptionDialogFragment::class.java.simpleName)
         }
 
+
+        //berpindah ke activity lain
         btnProfile.setOnClickListener{
 
             //requireAtivity() sebagai contex untuk fragment

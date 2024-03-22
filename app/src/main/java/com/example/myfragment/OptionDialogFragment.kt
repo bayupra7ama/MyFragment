@@ -54,6 +54,7 @@ class OptionDialogFragment : DialogFragment() {
         }
     }
 
+    //untuk mengelola dialog sedang digunakan atau tidak
     override fun onAttach(context: Context) {
         super.onAttach(context)
         val fragment = parentFragment

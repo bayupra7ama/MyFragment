@@ -10,7 +10,8 @@ import android.widget.Button
 
 class CategoriFragment : Fragment(), View.OnClickListener {
 
-
+//Mengirim Data Dengan Fragment
+//    Menggunakan Set Dan Get , Dan juga Menggunakan Bundel
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
